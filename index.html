@@ -12,8 +12,9 @@
     </div>
     <!-- Nav barre -->
     <div class="border-b border-b-slate-300 mb-6">
-        <nav class="flex justify-between md:mx-auto md:container py-4">
-            <ul class="flex items-center font-semibold md:w-6/12 justify-between text-lg">
+        <nav class="md:flex grow flex-wrap justify-between md:mx-auto md:container py-4">
+            <a href="#" class="md:hidden">Menu</a>
+            <ul class="hidden md:flex items-center font-semibold text-sm md:text-base md:w-6/12 justify-between text-lg">
                 <li>
                     <a href="#">
                         <!-- <img src="./images/eshop-logo-png.png" alt="logo e-shop" class=""> -->
@@ -38,10 +39,10 @@
 
     <!-- End Nav barre -->
 
-    <main class="md:container md:mx-auto">
+    <main class="p-2 md:p-0 md:container md:mx-auto">
         <!-- Black Friday Banner -->
-        <div id="black-friday" class="flex relative text-white h-80 mb-7">
-            <div class="bg-gray-800/40 absolute grow size-full  rounded-md p-4">
+        <div id="black-friday" class="flex relative text-white h-80 mb-7 ">
+            <div class="bg-gray-800/40 absolute grow size-full rounded-3xl p-4">
                 <div class="ms-4">
                     <p class="font-semibold text-amber-400 text-smooth">Up to 70% off!</p>
                     <div class="mt-4 text-slate-100">
@@ -52,16 +53,85 @@
                     <button class="bg-amber-400 rounded-md p-4 font-semibold text-black mt-6 hover:bg-amber-500">Shop now</button>
                 </div>
             </div>
-            <img src="./images/phone-and-charger.jpg" alt="black friday" class="size-full object-cover rounded-md grow" />
+            <img src="./images/phone-and-charger.jpg" alt="black friday" class="size-full object-cover rounded-3xl grow" />
         </div>
         <!-- end Black Friday Banner -->
 
-        <div class="bg-stone-400">
-            <h4>Best Prices</h4>
+        <!-- Best Prices -->
+        <div class="best-prices mb-4">
+            <h2 class="text-2xl font-bold mb-4">Best Prices</h2>
+            <div class="best-prices-products flex flex-wrap md:flex-nowrap justify-between gap-4">
+                <div class="card w-full md:w-4/12">
+                    <div class="card-body bg-neutral-200 h-72 rounded-xl flex items-center justify-center grow">
+                        <img src="./images/homepod.png" alt="homepod apple" class="w-48 h-auto">
+                    </div>
+                    <div class="card-footer description">
+                        <div class="price flex gap-2 mt-2 text-lg">
+                            <p class="font-bold">199$</p>
+                            <p class="text-neutral-400 line-through">299$</p>
+                            <p class="bg-red-500 rounded-md px-2 text-white">-35%</p>
+                        </div>
+                        <p class="product font-semibold text-lg">Apple Homepod Mini</p>
+                    </div>
+                </div>
+                <div class="card w-full md:w-4/12">
+                    <div class="card-body bg-neutral-200 h-72 rounded-xl flex items-center justify-center grow">
+                        <img src="./images/Sony.png" alt="homepod apple" class="w-48 h-auto">
+                    </div>
+                    <div class="card-footer description">
+                        <div class="price flex gap-2 mt-2 text-lg">
+                            <p class="font-bold">2100$</p>
+                            <p class="text-neutral-400 line-through">3100$</p>
+                            <p class="bg-red-500 rounded-md px-2 text-white">-25%</p>
+                        </div>
+                        <p class="product font-semibold text-lg">Sony Oled 4K (2023)</p>
+                    </div>
+                </div>
+                <div class="card w-full md:w-4/12">
+                    <div class="card-body bg-neutral-200 h-72 rounded-xl flex items-center justify-center grow">
+                        <img src="./images/brosse.png" alt="homepod apple" class="w-48 h-auto">
+                    </div>
+                    <div class="card-footer description">
+                        <div class="price flex gap-2 mt-2 text-lg">
+                            <p class="font-bold">800$</p>
+                            <p class="text-neutral-400 line-through">950$</p>
+                            <p class="bg-red-500 rounded-md px-2 text-white">-15%</p>
+                        </div>
+                        <p class="product font-semibold text-lg">Dyson Supersonic Hair Styler/Nickel</p>
+                    </div>
+                </div>
+                <div class="card w-full md:w-4/12">
+                    <div class="card-body bg-neutral-200 h-72 rounded-xl flex items-center justify-center grow">
+                        <img src="./images/smeg.webp" alt="homepod apple" class="w-48 h-auto">
+                    </div>
+                    <div class="card-footer description">
+                        <div class="price flex gap-2 mt-2 text-lg">
+                            <p class="font-bold">1099$</p>
+                            <p class="text-neutral-400 line-through">1999$</p>
+                            <p class="bg-red-500 rounded-md px-2 text-white">-20%</p>
+                        </div>
+                        <p class="product font-semibold text-lg">Smed Stand Mixer Pastel Blue</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bg-red-400">
-            <h4>Explore what's new</h4>
+        <!-- End Best Prices -->
+
+        <!-- Eplore What's New -->
+        <div class="what-is-new my-6">
+            <h2 class="text-2xl font-bold my-4">Explore what's new</h2>
+            <div class="new-products flex flex-wrap justify-between">
+                <div class="w-full md:w-5/12 h-72 relative mb-2">
+                    <h3 class="text-4xl font-semibold absolute left-6 top-1/2 transform -translate-y-1/2">Decorative <br/>Cosmetics</h3>
+                    <img src="./images/beaute.jpg" alt="" class="size-full rounded-xl object-cover">
+                </div>
+                <div class="w-full md:w-5/12 h-72 rounded-xl relative mb-2">
+                    <h3 class="text-4xl font-semibold absolute left-6 top-1/2 transform -translate-y-1/2">Selfcare <br/>Products</h3>
+                    <img src="./images/soins.webp" alt="" class="size-full rounded-xl object-cover">
+                </div>
+            </div>
         </div>
+        <!-- End Eplore What's New -->
     </main>
     
 </body>
